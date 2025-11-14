@@ -149,6 +149,80 @@ h2::after {
     line-height: 1.5;
 }
 
+/* Skills Section */
+.skills-section {
+    background: var(--bg-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+}
+
+.skills-category {
+    margin-bottom: 30px;
+}
+
+.skills-category:last-child {
+    margin-bottom: 0;
+}
+
+.skills-category h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    background: white;
+    color: var(--text-color);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 2px solid var(--secondary-color);
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.skill-tag:hover {
+    background: var(--secondary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.certification-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 25px;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.certification-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+.cert-icon {
+    font-size: 1.5rem;
+}
+
+.cert-text {
+    font-size: 1rem;
+}
+
 /* Contact Section */
 .contact-links {
     display: flex;
@@ -233,6 +307,15 @@ h2::after {
     .contact-link {
         justify-content: center;
     }
+
+    .skills-section {
+        padding: 20px;
+    }
+
+    .skill-tag {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -254,6 +337,24 @@ h2::after {
 
     .highlight-card {
         padding: 25px 15px;
+    }
+
+    .skills-section {
+        padding: 15px;
+    }
+
+    .skills-category h3 {
+        font-size: 1.1rem;
+    }
+
+    .skill-tag {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .certification-badge {
+        padding: 12px 20px;
+        font-size: 0.9rem;
     }
 }
 
