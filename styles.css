@@ -260,6 +260,18 @@ h2::after {
     box-shadow: var(--shadow);
 }
 
+.contact-link.location {
+    cursor: default;
+}
+
+.contact-link.location:hover {
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-color: transparent;
+    transform: none;
+    box-shadow: none;
+}
+
 .link-icon {
     font-size: 1.3rem;
 }
