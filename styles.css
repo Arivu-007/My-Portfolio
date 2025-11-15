@@ -46,6 +46,28 @@ body {
     position: relative;
 }
 
+.header-contact {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+.header-contact span {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 15px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    white-space: nowrap;
+}
+
 .profile-header::after {
     content: '';
     position: absolute;
@@ -499,11 +521,35 @@ h2::after {
         font-size: 0.95rem;
         padding-left: 20px;
     }
+
+    .header-contact {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    .header-contact span {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
 }
 
 @media (max-width: 480px) {
     .profile-header {
         padding: 40px 15px;
+    }
+
+    .header-contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .header-contact span {
+        font-size: 0.8rem;
+        padding: 5px 10px;
     }
 
     .name {
