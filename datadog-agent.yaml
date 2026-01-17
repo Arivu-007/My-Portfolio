@@ -1,0 +1,29 @@
+apiVersion: datadoghq.com/v1alpha1
+kind: DatadogAgent
+metadata:
+  name: datadog
+  namespace: datadog
+spec:
+  credentials:
+    apiKey:
+      secretName: datadog-secret
+      keyName: api-key
+  agent:
+    image:
+      registry: public.ecr.aws/datadog/datadog-agent
+      tag: latest-arm64
+    runAsNonRoot: true
+    logCollection:
+      containerCollectAll: true
+  clusterAgent:
+    enabled: true
+    image:
+      registry: public.ecr.aws/datadog/datadog-cluster-agent
+      tag: latest-arm64
+  features:
+    orchestratorExplorer:
+      enabled: true
+    clusterChecks:
+      enabled: true
+    apm:
+      enabled: true
