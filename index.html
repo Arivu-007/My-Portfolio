@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Professional career profile and portfolio of Arivazhagan Pandiyan, Site Reliability Engineer Lead & Azure Administrator.">
-    <meta name="theme-color" content="#0f172a">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;500;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
 
     <!-- Icons -->
@@ -40,254 +40,284 @@
 </head>
 
 <body>
-    <div class="background-effects">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-    </div>
 
-    <div class="container">
-        <header class="profile-header">
-            <div class="header-content">
-                <div class="profile-badge">SRE Lead</div>
-                <h1 class="name">Arivazhagan<br>Pandiyan</h1>
-                <p class="title">Site Reliability Engineer Lead | Azure Administrator | Cloud & Infrastructure
-                    Monitoring</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="nav-logo">
+                <i data-lucide="terminal-square"></i> Arivazhagan.P
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="mailto:arivu.p@live.in" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-                <div class="header-actions">
-                    <a href="mailto:arivu.p@live.in" class="btn btn-primary">
-                        <i data-lucide="mail"></i> Contact Me
-                    </a>
-                    <a href="https://www.linkedin.com/in/arivazhagan-pandiyan" target="_blank"
-                        class="btn btn-secondary">
-                        <i data-lucide="linkedin"></i> LinkedIn
-                    </a>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <span class="hero-badge">SRE Lead & Azure Architect</span>
+            <h1 class="hero-name">Arivazhagan Pandiyan</h1>
+            <p class="hero-title">Site Reliability Engineer Lead specialized in building fault-tolerant, scalable
+                infrastructure on Microsoft Azure with advanced Observability and Automation.</p>
+
+            <div class="btn-group">
+                <a href="mailto:arivu.p@live.in" class="btn btn-primary">
+                    <i data-lucide="mail"></i> Get in Touch
+                </a>
+                <a href="https://www.linkedin.com/in/arivazhagan-pandiyan" target="_blank" class="btn btn-outline">
+                    <i data-lucide="linkedin"></i> LinkedIn Profile
+                </a>
+            </div>
+
+            <div class="contact-mini">
+                <div><i data-lucide="mail" size="16"></i> arivu.p@live.in</div>
+                <div><i data-lucide="phone" size="16"></i> +1 346-599-0347</div>
+                <div><i data-lucide="map-pin" size="16"></i> Houston, Texas, USA</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>About Me</h2>
+                    <div class="divider"></div>
                 </div>
 
-                <div class="header-contact-info">
-                    <div class="contact-item">
-                        <i data-lucide="mail"></i>
-                        <span>arivu.p@live.in</span>
+                <div class="about-grid">
+                    <div class="about-content">
+                        <p class="about-text">
+                            I am a seasoned <strong>Site Reliability Engineer</strong> with over <strong>10 years of
+                                experience</strong> in designing and maintaining high-availability systems for
+                            mission-critical
+                            applications in the financial and healthcare sectors.
+                            <br><br>
+                            My expertise lies in <strong>Microsoft Azure</strong> ecosystem (AZ-104 Certified), where I
+                            architect scalable cloud solutions, automate complex workflows using <strong>PowerShell and
+                                Python</strong>, and implement robust observability strategies using tools like Datadog,
+                            Dynatrace, and Zabbix. I am passionate about reducing toil through automation and enhancing
+                            system
+                            reliability.
+                        </p>
                     </div>
-                    <div class="contact-item">
-                        <i data-lucide="phone"></i>
-                        <span>+1 346-599-0347</span>
-                    </div>
-                    <div class="contact-item">
-                        <i data-lucide="map-pin"></i>
-                        <span>Houston, Texas, USA</span>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <i data-lucide="shield-check" class="stat-icon" size="32"></i>
+                            <div class="stat-label">Reliability</div>
+                        </div>
+                        <div class="stat-card">
+                            <i data-lucide="zap" class="stat-icon" size="32"></i>
+                            <div class="stat-label">Automation</div>
+                        </div>
+                        <div class="stat-card">
+                            <i data-lucide="cloud" class="stat-icon" size="32"></i>
+                            <div class="stat-label">Cloud Native</div>
+                        </div>
+                        <div class="stat-card">
+                            <i data-lucide="users" class="stat-icon" size="32"></i>
+                            <div class="stat-label">Leadership</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <main class="content">
-            <section class="bio-section fade-in">
-                <div class="section-header">
-                    <i data-lucide="user" class="section-icon"></i>
-                    <h2>About Me</h2>
-                </div>
-                <div class="glass-card">
-                    <p class="bio-text">
-                        I'm a Site Reliability Engineer with <strong>10+ years of experience</strong> ensuring high
-                        availability, scalability, and performance for mission-critical systems in financial and
-                        healthcare domains. My expertise spans <strong>Microsoft Azure</strong> (AZ-104 certified),
-                        automation (PowerShell, Python), and advanced monitoring tools like Datadog, Dynatrace, Zabbix,
-                        and PagerDuty.
-                    </p>
-                    <div class="highlights-grid">
-                        <div class="highlight-item">
-                            <div class="icon-box"><i data-lucide="shield-check"></i></div>
-                            <span>Fault-Tolerant Architecture</span>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="icon-box"><i data-lucide="zap"></i></div>
-                            <span>Process Automation</span>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="icon-box"><i data-lucide="activity"></i></div>
-                            <span>Proactive Monitoring</span>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="icon-box"><i data-lucide="globe"></i></div>
-                            <span>Global Collaboration</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="experience-section fade-in">
-                <div class="section-header">
-                    <i data-lucide="briefcase" class="section-icon"></i>
+        <!-- Experience Section -->
+        <section id="experience" class="section" style="background: #f1f5f9;">
+            <div class="container">
+                <div class="section-head">
                     <h2>Professional Experience</h2>
+                    <div class="divider"></div>
                 </div>
 
-                <div class="experience-timeline">
+                <div class="timeline">
                     <!-- Job 1 -->
-                    <div class="experience-card">
-                        <div class="exp-date">Aug 2023 – Jul 2024</div>
-                        <div class="exp-content">
-                            <h3>Site Reliability Engineer Lead</h3>
-                            <p class="company">New American Funding</p>
-                            <ul class="responsibilities">
-                                <li><strong>SRE Leadership:</strong> Defined SLIs/SLOs and led incident response,
-                                    post-mortems, and Root Cause Analysis (RCA).</li>
-                                <li><strong>Cloud/Reliability:</strong> Designed scalable, highly-available systems on
-                                    Microsoft Azure.</li>
-                                <li><strong>Automation:</strong> Drove automation of repetitive tasks and deployment
-                                    tools.</li>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <h3 class="job-title">Site Reliability Engineer Lead</h3>
+                                <span class="job-period">Aug 2023 – Jul 2024</span>
+                            </div>
+                            <span class="company-name">New American Funding</span>
+                            <ul class="job-tasks">
+                                <li>Defined SLIs/SLOs and led incident response, post-mortems, and Root Cause Analysis
+                                    (RCA) to allow for continuous improvement.</li>
+                                <li>Designed scalable, highly-available systems on Microsoft Azure, ensuring 99.99%
+                                    uptime for critical services.</li>
+                                <li>Drove automation of repetitive tasks and deployment tools using CI/CD pipelines,
+                                    reducing manual effort by 40%.</li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Job 2 -->
-                    <div class="experience-card">
-                        <div class="exp-date">Oct 2017 – Oct 2022</div>
-                        <div class="exp-content">
-                            <h3>Technology Operations Associate</h3>
-                            <p class="company">Wells Fargo India Solutions</p>
-                            <ul class="responsibilities">
-                                <li><strong>Production Support:</strong> Managed and monitored internal servers,
-                                    applications, and hardware using ServiceNow.</li>
-                                <li><strong>Scripting:</strong> Used PowerShell for server troubleshooting
-                                    (CPU/Disk/Memory).</li>
-                                <li><strong>Vendor Management:</strong> Coordinated extensively with vendors (IBM, DELL,
-                                    HDS, Brocade).</li>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <h3 class="job-title">Technology Operations Associate</h3>
+                                <span class="job-period">Oct 2017 – Oct 2022</span>
+                            </div>
+                            <span class="company-name">Wells Fargo India Solutions</span>
+                            <ul class="job-tasks">
+                                <li>Managed and monitored internal servers, applications, and hardware inventory using
+                                    ServiceNow.</li>
+                                <li>Developed PowerShell scripts for automated server troubleshooting (CPU/Disk/Memory
+                                    analysis) and reporting.</li>
+                                <li>Coordinated extensively with vendors (IBM, DELL, HDS, Brocade) to resolve critical
+                                    hardware failures and production issues.</li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Job 3 -->
-                    <div class="experience-card">
-                        <div class="exp-date">Sept 2015 – Oct 2017</div>
-                        <div class="exp-content">
-                            <h3>System Administrator</h3>
-                            <p class="company">NTT Data Global Delivery</p>
-                            <ul class="responsibilities">
-                                <li><strong>Server Management:</strong> Monitored and managed live Windows and Linux
-                                    production servers.</li>
-                                <li><strong>Process Improvement:</strong> Rolled out IT Service Delivery tools, focusing
-                                    on change management.</li>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <h3 class="job-title">System Administrator</h3>
+                                <span class="job-period">Sept 2015 – Oct 2017</span>
+                            </div>
+                            <span class="company-name">NTT Data Global Delivery</span>
+                            <ul class="job-tasks">
+                                <li>Monitored and managed live Windows and Linux production servers in a 24/7
+                                    environment.</li>
+                                <li>Rolled out IT Service Delivery tools, focusing on change management processes and
+                                    automation strategies.</li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Job 4 -->
-                    <div class="experience-card">
-                        <div class="exp-date">Nov 2014 – Sept 2015</div>
-                        <div class="exp-content">
-                            <h3>Support Engineer</h3>
-                            <p class="company">First Source Solution</p>
-                            <ul class="responsibilities">
-                                <li><strong>Server Monitoring:</strong> Managed background applications and monitored
-                                    server health.</li>
-                                <li><strong>Customer Service:</strong> Handled customer inquiries using Kayako ticketing
-                                    system.</li>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <h3 class="job-title">Support Engineer</h3>
+                                <span class="job-period">Nov 2014 – Sept 2015</span>
+                            </div>
+                            <span class="company-name">First Source Solution</span>
+                            <ul class="job-tasks">
+                                <li>Managed background applications and monitored server health; addressed alerts for
+                                    Disk, CPU, and Memory utilization.</li>
+                                <li>Handled customer inquiries and incident tracking using the Kayako ticketing system.
+                                </li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Job 5 -->
-                    <div class="experience-card">
-                        <div class="exp-date">June 2013 – Aug 2014</div>
-                        <div class="exp-content">
-                            <h3>Technical Assistant Engineer</h3>
-                            <p class="company">Cliptos Technologies</p>
-                            <ul class="responsibilities">
-                                <li><strong>Technical Support:</strong> Installed and maintained software packages.</li>
-                                <li><strong>Healthcare Solutions:</strong> Assisted users with MEDITOS Clinical
-                                    Management Solutions.</li>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <h3 class="job-title">Technical Assistant Engineer</h3>
+                                <span class="job-period">June 2013 – Aug 2014</span>
+                            </div>
+                            <span class="company-name">Cliptos Technologies</span>
+                            <ul class="job-tasks">
+                                <li>Installed and maintained software packages and provided technical support for
+                                    desktop systems.</li>
+                                <li>Assisted users with application installation and configuration for Healthcare domain
+                                    (MEDITOS).</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="skills-section fade-in">
-                <div class="section-header">
-                    <i data-lucide="cpu" class="section-icon"></i>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-head">
                     <h2>Technical Proficiency</h2>
+                    <div class="divider"></div>
                 </div>
 
-                <div class="skills-grid">
-                    <div class="skill-card">
+                <div class="skills-container">
+                    <!-- Core -->
+                    <div class="skill-box">
                         <h3>Core Competencies</h3>
-                        <div class="skill-tags">
-                            <span>Microsoft Azure</span>
-                            <span>SRE Leadership</span>
-                            <span>Cloud Admin</span>
-                            <span>Uptime Optimization</span>
-                            <span>Incident Mgmt</span>
-                            <span>System Monitoring</span>
+                        <div class="tag-cloud">
+                            <span class="tag">Microsoft Azure</span>
+                            <span class="tag">SRE Leadership</span>
+                            <span class="tag">Cloud Architecture</span>
+                            <span class="tag">Uptime Optimization</span>
+                            <span class="tag">Incident Management</span>
+                            <span class="tag">System Monitoring</span>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <!-- Tools -->
+                    <div class="skill-box">
                         <h3>Tools & Languages</h3>
-                        <div class="skill-tags">
-                            <span>PowerShell</span>
-                            <span>Python</span>
-                            <span>Shell Scripting</span>
-                            <span>KQL</span>
-                            <span>Datadog</span>
-                            <span>Dynatrace</span>
-                            <span>Zabbix</span>
-                            <span>PagerDuty</span>
-                            <span>Terraform</span>
+                        <div class="tag-cloud">
+                            <span class="tag">PowerShell</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Shell Scripting</span>
+                            <span class="tag">KQL</span>
+                            <span class="tag">Datadog</span>
+                            <span class="tag">Dynatrace</span>
+                            <span class="tag">Zabbix</span>
+                            <span class="tag">PagerDuty</span>
+                            <span class="tag">Terraform</span>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <!-- Infra -->
+                    <div class="skill-box">
                         <h3>Infrastructure</h3>
-                        <div class="skill-tags">
-                            <span>Windows Server</span>
-                            <span>Linux/Unix</span>
-                            <span>VMware</span>
-                            <span>Cisco</span>
-                            <span>NetApp</span>
-                            <span>Pure Storage</span>
+                        <div class="tag-cloud">
+                            <span class="tag">Windows Server</span>
+                            <span class="tag">Linux/Unix</span>
+                            <span class="tag">VMware</span>
+                            <span class="tag">Cisco Networking</span>
+                            <span class="tag">NetApp</span>
+                            <span class="tag">Pure Storage</span>
                         </div>
                     </div>
 
-                    <div class="skill-card highlight">
-                        <h3>Certifications</h3>
+                    <!-- Certifications -->
+                    <div class="skill-box" style="border-color: var(--accent-primary);">
+                        <h3 style="color: var(--accent-primary);">Certifications</h3>
                         <div class="cert-list">
-                            <div class="cert-item">
-                                <i data-lucide="award"></i>
+                            <div class="cert-box">
+                                <i data-lucide="award" color="#fbbf24"></i>
                                 <span>AZ-104 Azure Administrator Associate</span>
                             </div>
-                            <div class="cert-item">
-                                <i data-lucide="award"></i>
+                            <div class="cert-box">
+                                <i data-lucide="award" color="#fbbf24"></i>
                                 <span>Datadog Fundamentals Certification</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-
-        <footer class="profile-footer">
-            <p>&copy; 2025 Arivazhagan Pandiyan. All rights reserved.</p>
-            <div class="social-links-footer">
-                <a href="mailto:arivu.p@live.in" aria-label="Email"><i data-lucide="mail"></i></a>
-                <a href="https://www.linkedin.com/in/arivazhagan-pandiyan" target="_blank" aria-label="LinkedIn"><i
-                        data-lucide="linkedin"></i></a>
             </div>
-        </footer>
-    </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Arivazhagan Pandiyan. All rights reserved.</p>
+            <div class="social-links">
+                <a href="mailto:arivu.p@live.in" class="social-icon" title="Email"><i data-lucide="mail"></i></a>
+                <a href="https://www.linkedin.com/in/arivazhagan-pandiyan" target="_blank" class="social-icon"
+                    title="LinkedIn"><i data-lucide="linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script>
         lucide.createIcons();
-
-        // Simple intersection observer for fade-in animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     </script>
 </body>
 
