@@ -5,23 +5,38 @@ import { SectionHead } from "./About";
 import { BadgeCheck } from "lucide-react";
 
 const skillGroups = [
-  { title: "Cloud", tags: ["Microsoft Azure", "Google Cloud Platform (GCP)"] },
-  { title: "Containers", tags: ["Kubernetes", "GKE"] },
+  {
+    title: "Cloud & Kubernetes",
+    tags: ["Google Cloud Platform (GCP)", "Microsoft Azure", "Google Kubernetes Engine (GKE)", "Kubernetes", "ConfigSync GitOps", "Helm", "Docker"],
+  },
+  {
+    title: "CI/CD & GitOps",
+    tags: ["Jenkins on Kubernetes", "JCasC", "Stakater Reloader", "GitOps Environment Promotion", "GitHub Actions"],
+  },
   {
     title: "Observability",
-    tags: ["Datadog (APM, Tracing, DBM, RUM)", "ELK Stack", "Splunk", "Dynatrace", "Azure Monitor"],
+    tags: ["Datadog (APM, Tracing, DBM, RUM)", "OpenTelemetry", "ELK Stack", "Splunk", "Dynatrace", "Azure Monitor"],
   },
   {
     title: "Automation / IaC",
-    tags: ["Terraform", "Ansible", "Python", "PowerShell", "Shell Scripting"],
+    tags: ["Terraform", "Ansible", "Python", "PowerShell", "Bash / Shell Scripting"],
   },
-  { title: "ITSM / Incident", tags: ["PagerDuty", "Opsgenie", "ServiceNow"] },
-  { title: "CI/CD", tags: ["Jenkins", "GitHub"] },
+  {
+    title: "Secrets & Security",
+    tags: ["HashiCorp Vault", "External Secrets Operator", "Kubernetes SecretStores", "RBAC & SecurityContext"],
+  },
   {
     title: "SRE Practice",
     tags: ["Error Budgets", "Chaos Engineering (Chaos Mesh)", "Blameless Post-mortems", "Golden Signals", "SLIs / SLOs"],
   },
-  { title: "Platforms", tags: ["VMware", "Linux (RHEL/Ubuntu)", "Windows Server"] },
+  {
+    title: "ITSM / Incident",
+    tags: ["PagerDuty", "Opsgenie", "ServiceNow", "Incident Command & RCA"],
+  },
+  {
+    title: "Platforms & Infra",
+    tags: ["Linux (RHEL / Ubuntu)", "VMware", "Windows Server", "WebLogic TMS"],
+  },
 ];
 
 const certs = [
